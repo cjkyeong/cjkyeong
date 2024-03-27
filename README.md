@@ -3,7 +3,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=jaek%20HOME&fontSize=40&animation=fadeIn)
 
   ### Hi there 👋
-코린이  JAEK의 공간😎
+코린이  JAEK의 공간 😎
 
   #### 😄 연락 : <a href="https://notefolio.net/"><img src="https://img.shields.io/badge/인스타그램-beige??style=for-the-badge&logo=Instagram&logoColor=E4405F"/></a>,  <a href="https://notefolio.net/"><img src="https://img.shields.io/badge/노션-beige??style=for-the-badge&logo=Notion&logoColor=#000000"/></a>
 
