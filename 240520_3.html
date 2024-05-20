@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+</head>
+<body>
+    <p>
+        <button id="btn_01">Click Me</button>
+    </p>
+<ul class="box01">
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+    <li>내용5</li>
+    <li>내용6</li>
+</ul>
+<ul class="box02">
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+    <li>내용5</li>
+    <li>내용6</li>
+</ul>
+<ul class="box03">
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+    <li>내용5</li>
+    <li>내용6</li>
+</ul>
+
+<script>
+    $(function(){
+        //1. ~~when~ 할 때 
+        //2. ~~what 무엇을 하시오
+        $('#btn_01').click(function(e){ //1번 수행
+            //$('.box01').css('background-color','lightgreen'); //2번 수행
+            $('.box01 li:nth-child(2)').css('color','red');
+            //박스 투안의 리스트 중 홀수인 녀석들만 테두리를 2px 솔리드 크림슨 컬러를 주어보세요.
+            //$('.box02').css('background-color','lightblue'); //2번 수행
+            $('.box02 li:nth-child(odd)').css('border','2px solid crimson');
+            $('.box03').css('background-color','lightpink'); //2번 수행
+        });
+    });
+</script>
+
+</body>
+</html>
