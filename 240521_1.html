@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <style>
+        section{
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        div{display: none;}
+
+        .box02 a{
+             text-decoration: none;
+             color: black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p class="btn">
+            <button class="btn01">1.이미지를 가져오는 버튼</button>
+            <button class="btn02">2. 이미지 링크를 변경하는 버튼</button>
+            <p class="box01"><img src="./images/배경이미지123.jpg"  width="500px" height="500px" alt="배경이미지123"></p>
+            <p class="box02"><a href="http://www.naver.com">네이버 사이트</a></p>
+        </p>
+        
+        <div>
+            <img src="./images/배경이미지49.jpg" width="500px" height="500px" alt="배경49" srcset="">
+        </div>
+    </section>
+    <script>
+
+        //DOM = HTML문서
+        //노드 = HTML내용
+        
+        //DOM을 다루는 메서드 = HTMl을 다루는(핸들링-변경) 메서드 (text / html / attr)
+        //HTML의 문서 내용이 변경된다
+        //
+        //attr = 가져오다 ~bring to     
+        //.text();
+        //.html();
+        //.attr();
+
+         //어트리뷰트 (속성)
+                //1. ~가져오다
+                //2. ~추가하다 (교체하다)
+            //right : 1. 오른쪽 / 2권리 / 정치~~ / 옳은 일
+        $(function(){
+            $(".btn01").click(function(){
+                var number = $('div>img').attr('src');
+                $('.box01>img').attr('src',number);
+            });
+        
+        $(".btn02").click(function(){
+                var number2 =  "https://www.kakocorp.com/page/";
+               $('.box02>a').attr('href',number2).text('다음카카오')
+            });
+        });
+    </script>
+</body>
+</html>
